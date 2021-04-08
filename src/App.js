@@ -7,16 +7,18 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/boutique'>
-          <Store />
-        </Route>
-      </Switch>
-    </Router>
+    <div className='App'>
+      <Router>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/boutique'>
+            <Store />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   )
 }
 
