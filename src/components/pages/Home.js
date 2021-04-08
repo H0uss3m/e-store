@@ -36,8 +36,17 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className='realistaions-box'></div>
-        <div className='instalation-box'></div>
+        <div className='realisations-box'>
+          <div className='title'>
+            <h1>Nos realisations</h1>
+          </div>
+          <div className='slider'>slider</div>
+          <div className='realisation-img'>realisation</div>
+        </div>
+        <div className='instalation-box'>
+          <div className='instalation-box-title'></div>
+          <div className='instalation-box-img'></div>
+        </div>
         <div className='store-box'></div>
 
         {/* <Footer /> */}
