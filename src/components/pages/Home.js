@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from '../../images/1e1fc50768fe089201a9d2f194ad33f1.png'
 import logo1 from '../../images/img-3.png'
-import Footer from '../Footer'
-import Nav from '../Nav'
+import configLogo from '../../images/008-fence@2x.png'
 import './Home.css'
 import HomeCard from '../HomeCard'
 const cards = [
@@ -15,7 +14,6 @@ const cards = [
 const Home = () => {
   return (
     <div className='Home'>
-      <Nav />
       <div className='banner-box'>
         <div className='main-banner'></div>
         <div className='banner-cards'>
@@ -26,59 +24,23 @@ const Home = () => {
       </div>
 
       <div className='body'>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <div>Lorem Ipsem </div>
-        <Footer />
+        <div className='config-box'>
+          <div className='config-box-logo'>
+            <img src={configLogo} alt='config-logo' />
+          </div>
+          <div className='config-box-paragraph'>
+            <h1>Configurez votre espace</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidu.
+            </p>
+          </div>
+        </div>
+        <div className='realistaions-box'></div>
+        <div className='instalation-box'></div>
+        <div className='store-box'></div>
+
+        {/* <Footer /> */}
       </div>
     </div>
   )

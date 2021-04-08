@@ -3,6 +3,7 @@
   background-color: white;
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 .footer-logo {
   display: flex;
