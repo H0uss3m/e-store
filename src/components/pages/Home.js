@@ -4,7 +4,15 @@ import logo1 from '../../images/img-3.png'
 import configLogo from '../../images/008-fence@2x.png'
 import './Home.css'
 import HomeCard from '../HomeCard'
+import { convertCompilerOptionsFromJson } from 'typescript'
 const cards = [
+  { id: 0, src: logo },
+  { id: 1, src: logo1 },
+  { id: 2, src: logo },
+  { id: 3, src: logo1 },
+  { id: 4, src: logo },
+]
+const instalations = [
   { id: 0, src: logo },
   { id: 1, src: logo1 },
   { id: 2, src: logo },
@@ -44,8 +52,23 @@ const Home = () => {
           <div className='realisation-img'>realisation</div>
         </div>
         <div className='instalation-box'>
-          <div className='instalation-box-title'></div>
-          <div className='instalation-box-img'></div>
+          <div className='instalation-box-title'>
+            <h1>Notice</h1>
+            <h1> & Installation</h1>
+            <p>
+              Avant de commencer, calculez la quantité de bois, de béton et de
+              quincaillerie dont vous aurez besoin.
+            </p>
+          </div>
+          {instalations.map((example, index) => (
+            <div
+              style={{
+                background: `transparent url(${example.src}) no-repeat`,
+                backgroundSize: 'cover',
+              }}
+              className='instalation-box-img'
+            ></div>
+          ))}
         </div>
         <div className='store-box'></div>
 
