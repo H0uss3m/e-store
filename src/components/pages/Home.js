@@ -4,6 +4,7 @@ import logo1 from '../../images/img-3.png'
 import configLogo from '../../images/008-fence@2x.png'
 import './Home.css'
 import HomeCard from '../HomeCard'
+import Footer from '../Footer'
 import { convertCompilerOptionsFromJson } from 'typescript'
 const cards = [
   { id: 0, src: logo },
@@ -45,11 +46,11 @@ const Home = () => {
           </div>
         </div>
         <div className='realisations-box'>
-          <div className='title'>
+          <div className='realisations-box-title'>
             <h1>Nos realisations</h1>
           </div>
-          <div className='slider'>slider</div>
-          <div className='realisation-img'>realisation</div>
+          <div className='realisations-box-slider'>slider</div>
+          <div className='realisations-box-img'>realisation</div>
         </div>
         <div className='instalation-box'>
           <div className='instalation-box-title'>
@@ -70,9 +71,22 @@ const Home = () => {
             ></div>
           ))}
         </div>
-        <div className='store-box'></div>
+        <div className='store-box'>
+          <div className='store-box-title'>
+            <h1>Notre magasin</h1>
+          </div>
+          <div className='store-box-slider'>
+            <img src={logo} alt='magasin-photo' />
+            <p>
+              Dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+          <div className='store-box-img'>magasin photos</div>
+        </div>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   )
