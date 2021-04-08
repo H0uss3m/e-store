@@ -14,16 +14,16 @@ const Footer = () => {
         <label>Lien Utiles</label>
         <ul>
           <li>
-            <Link>Configurateur</Link>
+            <Link to='/'>Configurateur</Link>
           </li>
           <li>
-            <Link>Notre magasin</Link>
+            <Link to='/'>Notre magasin</Link>
           </li>
           <li>
-            <Link>Notice et installation</Link>
+            <Link to='/'>Notice et installation</Link>
           </li>
           <li>
-            <Link>Livraison Transport</Link>
+            <Link to='/'>Livraison Transport</Link>
           </li>
         </ul>
       </div>
