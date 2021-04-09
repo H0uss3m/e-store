@@ -5,7 +5,6 @@ import configLogo from '../../images/008-fence@2x.png'
 import './Home.css'
 import HomeCard from '../HomeCard'
 import Footer from '../Footer'
-import { convertCompilerOptionsFromJson } from 'typescript'
 const cards = [
   { id: 0, src: logo },
   { id: 1, src: logo1 },
@@ -35,7 +34,7 @@ const Home = () => {
       <div className='body'>
         <div className='config-box'>
           <div className='config-box-logo'>
-            <img src={configLogo} alt='config-logo' />
+            <img src={configLogo} alt='config' />
           </div>
           <div className='config-box-paragraph'>
             <h1>Configurez votre espace</h1>
@@ -76,7 +75,7 @@ const Home = () => {
             <h1>Notre magasin</h1>
           </div>
           <div className='store-box-slider'>
-            <img src={logo} alt='magasin-photo' />
+            <img src={logo} alt='magasin' />
             <p>
               Dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
