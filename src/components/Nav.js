@@ -1,13 +1,16 @@
 import React from 'react'
 import './Nav.css'
 import logo from '../images/logo-store.png'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
     <div className='navbar'>
       <div className='navbar-header'>
         <div className='logo'>
-          <img src={logo} alt='store-logo' />
+          <Link>
+            <img src={logo} alt='store-logo' />
+          </Link>
         </div>
         <div className='search'>
           <input type='text' placeholder='Recherche' />

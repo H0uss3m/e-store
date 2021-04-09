@@ -21,7 +21,9 @@
   display: flex;
   cursor: pointer;
 }
-
+.logo > a > img {
+  height: 50px;
+}
 .search {
   border-right: 1px solid #e2e2e2;
   display: flex;
