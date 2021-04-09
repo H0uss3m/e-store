@@ -1,24 +1,11 @@
 import React from 'react'
 import logo from '../../images/1e1fc50768fe089201a9d2f194ad33f1.png'
-import logo1 from '../../images/img-3.png'
 import configLogo from '../../images/008-fence@2x.png'
 import './Home.css'
 import HomeCard from '../HomeCard'
 import Footer from '../Footer'
-const cards = [
-  { id: 0, src: logo },
-  { id: 1, src: logo1 },
-  { id: 2, src: logo },
-  { id: 3, src: logo1 },
-  { id: 4, src: logo },
-]
-const instalations = [
-  { id: 0, src: logo },
-  { id: 1, src: logo1 },
-  { id: 2, src: logo },
-  { id: 3, src: logo1 },
-  { id: 4, src: logo },
-]
+import { cards, instalations } from '../../utils'
+
 const Home = () => {
   return (
     <div className='Home'>

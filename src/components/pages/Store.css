@@ -40,6 +40,7 @@ h1 {
 .store-container {
   display: flex;
   flex-direction: row;
+  margin-top: 2%;
 }
 .store-body {
   position: absolute;
@@ -52,8 +53,11 @@ h1 {
   margin-bottom: 2%;
 }
 .store-aside {
-  background-color: blue;
+  background-color: #f8f8f8;
   flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .store-cards-container {
@@ -66,26 +70,32 @@ h1 {
 .store-aside-buttons {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #e2e2e2;
 }
 .store-aside-buttons > a {
   height: 60px;
-  border: none;
   color: #6f6c6c;
-  border: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.store-aside-buttons > a > p {
+  margin-left: 10%;
 }
 .store-cards-links > h4 {
   margin: 2%;
   font-size: 16px;
   cursor: pointer;
 }
-.store-aside-links > h3 {
-  background-color: black;
-  text-align: left;
-  margin-left: 2%;
-  color: white;
+.store-aside-links {
+  background-color: #ffffff;
+  margin-top: -22%;
+  border: 1px solid #e2e2e2;
+}
+.ban {
+  border: 1px solid #e2e2e2;
+}
+.store-aside-links > h1 {
   cursor: pointer;
 }
 .sotre-divider {
@@ -99,7 +109,14 @@ h1 {
   padding: 2%;
 }
 .store-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: black;
+}
+.store-card > img {
+  width: 100%;
+  height: auto;
 }
 .store-loading {
   grid-column: 1/4;
@@ -110,7 +127,15 @@ h1 {
   height: 50px;
   background-color: #f2f2f2;
   border: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+}
+.active {
+  background: #7daf3f url('../../images/back.png') 90% 50% no-repeat;
+}
+.active > p {
+  color: #ffffff;
+}
+.store-card-overview {
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 10%;
 }

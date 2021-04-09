@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Store.css'
 import Footer from '../Footer'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { url } from '../../utils'
 const Store = () => {
+  const [cards, setCards] = useState([])
+  useEffect(() => {
+    axios
+      .get(url)
+      .then((res) => setCards(res.data))
+      .catch((error) => console.log('error  :', error))
+  }, [])
+
   return (
     <div className='store'>
       <div className='store-banner-box'>
@@ -20,20 +30,42 @@ const Store = () => {
             <div className='store-aside-links'>
               <h1>CATÉGORIES</h1>
               <div className='store-aside-buttons'>
-                <Link>Lame Bois</Link>
-                <Link>Lame Bois</Link>
-                <Link>Lame Bois</Link>
-                <Link>Lame Bois</Link>
-                <Link>Lame Bois</Link>
+                <Link className='active'>
+                  <p>Lame Bois</p>
+                </Link>
+                <Link>
+                  <p>Lame Composite</p>
+                </Link>
+                <Link>
+                  <p>Panneau Bois</p>
+                </Link>
+                <Link>
+                  <p>Grille Rigide</p>
+                </Link>
+                <Link>
+                  <p>Gabion</p>
+                </Link>
               </div>
             </div>
-            <div className='store-aside-banner'>
+            <div className='store-aside-links ban'>
               <h1>CATÉGORIES</h1>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
+              <div className='store-aside-buttons'>
+                <Link className='active'>
+                  <p>Lame Bois</p>
+                </Link>
+                <Link>
+                  <p>Lame Composite</p>
+                </Link>
+                <Link>
+                  <p>Panneau Bois</p>
+                </Link>
+                <Link>
+                  <p>Grille Rigide</p>
+                </Link>
+                <Link>
+                  <p>Gabion</p>
+                </Link>
+              </div>
             </div>
           </div>
           <div className='store-cards-container'>
@@ -43,15 +75,15 @@ const Store = () => {
               <h4>Meilleures Ventes</h4>
             </div>
             <div className='sotre-cards'>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
-              <div className='store-card'></div>
+              {cards.map((card) => (
+                <div key={card.id} className='store-card'>
+                  {/* <img src={card.picture} alt={card.product_name} /> */}
+                  <div className='store-card-overview'>
+                    <p>{card.product_name}</p>
+                    <h2>{card.price} ML</h2>
+                  </div>
+                </div>
+              ))}
               <div className='store-loading'>
                 <button>
                   <b>AFFICHER PLUS</b>
