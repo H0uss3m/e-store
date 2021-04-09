@@ -1,6 +1,7 @@
 import React from 'react'
 import './Store.css'
 import Footer from '../Footer'
+import { Link } from 'react-router-dom'
 const Store = () => {
   return (
     <div className='store'>
@@ -18,11 +19,13 @@ const Store = () => {
           <div className='store-aside'>
             <div className='store-aside-links'>
               <h1>CATÉGORIES</h1>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
-              <h3>Lame Bois</h3>
+              <div className='store-aside-buttons'>
+                <Link>Lame Bois</Link>
+                <Link>Lame Bois</Link>
+                <Link>Lame Bois</Link>
+                <Link>Lame Bois</Link>
+                <Link>Lame Bois</Link>
+              </div>
             </div>
             <div className='store-aside-banner'>
               <h1>CATÉGORIES</h1>
@@ -49,6 +52,11 @@ const Store = () => {
               <div className='store-card'></div>
               <div className='store-card'></div>
               <div className='store-card'></div>
+              <div className='store-loading'>
+                <button>
+                  <b>AFFICHER PLUS</b>
+                </button>
+              </div>
             </div>
           </div>
           <div className='sotre-divider'></div>
