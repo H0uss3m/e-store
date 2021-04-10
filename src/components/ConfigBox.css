@@ -1,0 +1,25 @@
+.config-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2% 11%;
+  padding: 20px;
+  background: #7daf3f url('../images/arrow-left-line.png') 80% 50% no-repeat
+    padding-box;
+  transition: background 300ms;
+}
+.config-box:hover {
+  background: #4d302b url('../images/arrow-left-line.png') 90% 50% no-repeat
+    padding-box;
+}
+.config-box-paragraph {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: flex-start;
+}
+.config-box-paragraph > p {
+  color: #ffffff;
+  width: 70%;
+  text-align: start;
+}

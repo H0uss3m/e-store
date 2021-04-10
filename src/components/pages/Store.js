@@ -3,12 +3,14 @@ import './Store.css'
 import Footer from '../Footer'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import { url } from '../../utils'
+import { URL } from '../../utils'
+
 const Store = () => {
   const [cards, setCards] = useState([])
+  // fetch card data
   useEffect(() => {
     axios
-      .get(url)
+      .get(URL)
       .then((res) => setCards(res.data))
       .catch((error) => console.log('error  :', error))
   }, [])

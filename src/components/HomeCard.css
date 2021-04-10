@@ -9,9 +9,10 @@
   background-size: cover !important;
 }
 .banner-card > p {
-  position: absolute;
   color: white;
   font-weight: bold;
-  top: 30%;
-  right: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

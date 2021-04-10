@@ -1,0 +1,35 @@
+.store-box {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(15%, 1fr));
+  grid-template-rows: repeat(3, minmax(160px, 1fr));
+  grid-gap: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 11%;
+}
+.store-box-title {
+  display: flex;
+  align-items: center;
+  grid-column: 4/4;
+  z-index: 1000;
+  grid-row: 1/1;
+}
+.store-box-slider {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  grid-column: 3/5;
+  grid-row: 2/4;
+  margin-right: 25%;
+  z-index: 1000;
+}
+.store-box-slider > img {
+  width: 100%;
+  height: auto;
+}
+.store-box-img {
+  background-color: pink;
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
