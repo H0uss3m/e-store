@@ -66,6 +66,7 @@ h1 {
 }
 .store-cards-links {
   display: flex;
+  color: #6f6c6c;
 }
 .store-aside-buttons {
   display: flex;
@@ -134,8 +135,16 @@ h1 {
 .active > p {
   color: #ffffff;
 }
+.active-link {
+  color: #000000;
+}
 .store-card-overview {
   background-color: #ffffff;
   text-align: left;
   padding-left: 10%;
+  color: #000000;
+}
+.product-price {
+  color: #b7b7b7;
+  font-weight: bold;
 }

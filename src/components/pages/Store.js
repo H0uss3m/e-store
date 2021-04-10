@@ -19,7 +19,7 @@ const Store = () => {
         <div className='store-main-banner'>
           <h1>Nos Produits</h1>
           <p>
-            Acceuil <em>></em> boutique
+            Acceuil <em> > </em> boutique
           </p>
         </div>
       </div>
@@ -70,17 +70,23 @@ const Store = () => {
           </div>
           <div className='store-cards-container'>
             <div className='store-cards-links'>
-              <h4>Nouveautés</h4>
+              <h4 className='active-link'>Nouveautés</h4>
               <h4>Populaire</h4>
               <h4>Meilleures Ventes</h4>
             </div>
             <div className='sotre-cards'>
               {cards.map((card) => (
-                <div key={card.id} className='store-card'>
-                  {/* <img src={card.picture} alt={card.product_name} /> */}
+                <div
+                  key={card.id}
+                  style={{
+                    background: `transparent url(${card.picture}) no-repeat`,
+                    backgroundSize: 'cover',
+                  }}
+                  className='store-card'
+                >
                   <div className='store-card-overview'>
-                    <p>{card.product_name}</p>
-                    <h2>{card.price} ML</h2>
+                    <p className='product-name'>{card.product_name}</p>
+                    <p className='product-price'>{card.price} ML</p>
                   </div>
                 </div>
               ))}
