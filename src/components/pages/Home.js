@@ -1,13 +1,11 @@
 import React from 'react'
-import './Home.css'
 import Banner from '../Banner'
-import HomeCard from '../HomeCard'
 import ConfigBox from '../ConfigBox'
 import Footer from '../Footer'
 import Achievement from '../Achievement'
-import { facilities } from '../../utils'
 import Facilities from '../Facilities'
 import StoreBanner from '../StoreBanner'
+import './Home.css'
 
 const Home = () => {
   return (
@@ -19,7 +17,6 @@ const Home = () => {
         <Achievement />
         <Facilities />
         <StoreBanner />
-
         <Footer />
       </div>
     </div>

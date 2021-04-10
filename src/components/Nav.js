@@ -7,11 +7,11 @@ const Nav = () => {
   return (
     <div className='navbar'>
       <div className='navbar-header'>
-        <div className='logo'>
-          <Link>
+        <Link to='/'>
+          <div className='logo'>
             <img src={logo} alt='store-logo' />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className='search'>
           <input type='text' placeholder='Recherche' />
         </div>
@@ -30,7 +30,9 @@ const Nav = () => {
           <p>Acceeuil</p>
         </div>
         <div className='boutique'>
-          <p>Boutique</p>
+          <Link to='/boutique'>
+            <p>Boutique</p>
+          </Link>
         </div>
         <div className='realisations'>
           <p>Nos realisations</p>
