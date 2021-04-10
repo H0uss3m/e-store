@@ -2,17 +2,19 @@
   display: grid;
   padding: 2%;
   grid-template-columns: repeat(3, minmax(15%, 1fr));
-  grid-template-rows: repeat(2, minmax(210px, 1fr));
+  grid-template-rows: repeat(2, minmax(352px, 1fr));
   grid-gap: 4% 2%;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 9%;
   margin-right: 9%;
 }
+
 .facilities-box-title {
   background: #4d302b;
   text-align: start;
   padding: 5%;
+  transition: transform 0.45ms;
 }
 .facilities-box-title > h1 {
   color: #7daf3f;
@@ -23,6 +25,7 @@
 }
 .facilities-box-title:hover {
   background: #7daf3f;
+  transform: scale(1);
 }
 .facilities-box-title:hover > h1 {
   color: #4d302b;

@@ -4,19 +4,44 @@
   align-items: center;
   margin: 2% 11%;
   padding: 20px;
-  background: #7daf3f url('../images/arrow-left-line.png') 80% 50% no-repeat
-    padding-box;
+  background: #4d302b;
   transition: background 300ms;
+  position: relative;
+  z-index: 1;
 }
-.config-box:hover {
-  background: #4d302b url('../images/arrow-left-line.png') 90% 50% no-repeat
-    padding-box;
+
+.config-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: transform 300ms ease-in-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
 }
+
+.config-box:hover::before,
+.config-box:focus::before {
+  transform: scaleY(1);
+  background: #7daf3f;
+  background-size: cover;
+}
+
 .config-box-paragraph {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   align-items: flex-start;
+  background: transparent url('../images/arrow-left-line.png') 80% 50% no-repeat
+    padding-box;
+}
+
+.config-box-paragraph:hover {
+  background: transparent url('../images/arrow-left-line.png') 90% 50% no-repeat
+    padding-box;
 }
 .config-box-paragraph > p {
   color: #ffffff;

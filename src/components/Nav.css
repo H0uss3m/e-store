@@ -102,11 +102,19 @@ input:focus {
   border-bottom: 1px solid #e2e2e2;
   background-color: white;
 }
+.acceuil:hover,
+.realisations:hover {
+  background-color: #7daf3f;
+  color: #ffffff;
+}
 .boutique {
   width: 100%;
   background-color: white;
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
+}
+.boutique > a {
+  color: #000000;
 }
 .realisations {
   background-color: white;

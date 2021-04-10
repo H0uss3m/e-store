@@ -27,7 +27,7 @@ const Nav = () => {
         <div className='body-divider'></div>
 
         <div className='acceuil'>
-          <p>Acceeuil</p>
+          <p>Accueil</p>
         </div>
         <div className='boutique'>
           <Link to='/boutique'>
