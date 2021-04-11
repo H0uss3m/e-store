@@ -11,14 +11,14 @@ function App() {
     <div className='App'>
       <Router>
         <Nav />
-        {/* <Switch>
+        <Switch>
           <Route exact path='/'>
             <Home />
           </Route>
           <Route exact path='/boutique'>
             <Store />
           </Route>
-        </Switch> */}
+        </Switch>
       </Router>
     </div>
   )
