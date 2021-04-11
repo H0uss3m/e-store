@@ -81,6 +81,7 @@ const Store = () => {
                   <div className='store-card-overview'>
                     <p className='product-name'>{card.product_name}</p>
                     <p className='product-price'>{card.price} ML</p>
+                    <p className='details'>VOIR DETAILS</p>
                   </div>
                 </div>
               ))}

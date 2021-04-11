@@ -78,12 +78,16 @@ h1 {
 .store-aside-banner > img {
   width: 53px;
   height: auto;
+  margin: 0% 15% 15%;
 }
 .store-aside-banner {
-  margin-bottom: 4%;
   margin: 20% 0%;
   color: #ffffff;
   border: none;
+}
+.store-aside-banner > p {
+  margin: 3% 10%;
+  text-align: left;
 }
 .store-cards-links > h4 {
   margin: 2%;
@@ -146,7 +150,17 @@ h1 {
   background-color: #ffffff;
   text-align: left;
   padding-left: 10%;
+  cursor: pointer;
   color: #000000;
+}
+.store-card-overview > .details {
+  display: none;
+}
+.store-card-overview:hover > .details {
+  display: flex;
+  color: #7daf3f;
+  background: #ffffff url('../../images/black-arrow-left-line2.png') no-repeat
+    90% 50%;
 }
 .product-price {
   color: #b7b7b7;
