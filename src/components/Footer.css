@@ -1,13 +1,10 @@
 .footer {
+  padding: 2% 0%;
   margin-top: 2%;
   background-color: white;
   display: flex;
   overflow: hidden;
   text-align: left;
-}
-.footer-logo {
-  width: 25%;
-  background: transparent url('../images/footer-logo.png') 0% 0% no-repeat;
 }
 .footer-links {
   display: flex;
@@ -45,8 +42,12 @@ footer > h1 {
   font-size: 18px;
 }
 .time {
-  background: transparent url('../images/time.png') 5% 50% no-repeat;
-  text-align: center;
+  display: flex;
+  color: #6f6c6c;
+  margin-top: 15px;
+}
+.time > img {
+  margin-right: 2px;
 }
 
 a {
@@ -56,4 +57,5 @@ a {
 .footer-contact > b,
 .footer-schedule > b {
   color: #1f1f1f;
+  margin: 0% 2%;
 }

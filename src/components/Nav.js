@@ -27,23 +27,24 @@ const Nav = () => {
       <div className='navbar-body'>
         <div className='body-divider'></div>
 
-        <div className='acceuil'>
+        <Link className='acceuil' to='/'>
           <p>Accueil</p>
-        </div>
+        </Link>
         <div className='boutique'>
           <div className='form-box'>
             <div className='form-img'>
               {cards.map((card) => (
-                <p key={card.id}>{card.name}</p>
+                <p key={card.id}>
+                  <Link to='/boutique'>{card.name}</Link>
+                </p>
               ))}
             </div>
             <div className='form'>
               <button>Envoyer</button>
             </div>
           </div>
-          <Link to='/boutique'>
-            <p>Boutique</p>
-          </Link>
+
+          <p>Boutique</p>
         </div>
         <div className='realisations'>
           <p>Nos realisations</p>

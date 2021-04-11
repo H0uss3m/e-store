@@ -101,6 +101,7 @@ input:focus {
   border-left: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   background-color: white;
+  color: #000000;
 }
 .acceuil:hover,
 .realisations:hover {
@@ -114,8 +115,8 @@ input:focus {
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
 }
-.boutique > a {
-  color: #000000;
+.boutique > .form-box > .form-img > p > a {
+  color: #ffffff;
 }
 .boutique > .form-box > .form {
   padding: 0%;

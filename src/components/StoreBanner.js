@@ -1,6 +1,7 @@
 import React from 'react'
 import './StoreBanner.css'
-import logo from '../images/1e1fc50768fe089201a9d2f194ad33f1.png'
+import logo from '../images/image.png'
+import storeImg from '../images/c49410fcd941eb66349f9dd27fceebaf.png'
 
 const StoreBanner = () => {
   return (
@@ -16,7 +17,9 @@ const StoreBanner = () => {
           consetetur sadipscing elitr.
         </p>
       </div>
-      <div className='store-box-img'>magasin photos</div>
+      <div className='store-box-img'>
+        <img src={storeImg} alt='store' />
+      </div>
     </div>
   )
 }

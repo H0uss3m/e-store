@@ -1,12 +1,16 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import footerLogo from '../images/footer-logo.png'
+import clock from '../images/time.png'
 
 const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-divider'></div>
-      <div className='footer-logo'></div>
+      <div className='footer-logo'>
+        <img src={footerLogo} alt='logo' />
+      </div>
       <div className='footer-links'>
         <h3>Lien Utiles</h3>
         <div>
@@ -35,15 +39,18 @@ const Footer = () => {
         <h3>Horraires</h3>
         <b>Lundi a Vendredi</b>
         <div className='time'>
-          <p>7:30-12:00</p>
+          <img src={clock} alt='clock' />
+          7:30-12:00
         </div>
         <div className='time'>
-          <p>13:30-18:00</p>
+          <img src={clock} alt='clock' />
+          13:30-18:00
         </div>
         <b>Samedi </b>
         <p>(Fermé les samedis de janvier et février)</p>
         <div className='time'>
-          <p>9:00-12:00</p>
+          <img src={clock} alt='clock' />
+          9:00-12:00
         </div>
       </div>
       <div className='footer-divider'></div>

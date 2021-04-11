@@ -21,15 +21,19 @@
   border: 1px solid #e2e2e2;
   grid-column: 3/5;
   grid-row: 2/4;
-  margin-right: 25%;
+  margin-right: 25% !important  ;
+  margin: auto;
+  text-align: left;
   z-index: 1000;
 }
 .store-box-slider > img {
   width: 100%;
   height: auto;
 }
+.store-box-slider > p {
+  padding: 0% 4%;
+}
 .store-box-img {
-  background-color: pink;
   grid-column: 1/4;
   grid-row: 1/4;
 }
