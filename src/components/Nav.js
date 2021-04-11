@@ -2,6 +2,7 @@ import React from 'react'
 import './Nav.css'
 import logo from '../images/logo-store.png'
 import { Link } from 'react-router-dom'
+import { cards } from '../utils'
 
 const Nav = () => {
   return (
@@ -30,6 +31,16 @@ const Nav = () => {
           <p>Accueil</p>
         </div>
         <div className='boutique'>
+          <div className='form-box'>
+            <div className='form-img'>
+              {cards.map((card) => (
+                <p key={card.id}>{card.name}</p>
+              ))}
+            </div>
+            <div className='form'>
+              <button>Envoyer</button>
+            </div>
+          </div>
           <Link to='/boutique'>
             <p>Boutique</p>
           </Link>
@@ -38,6 +49,21 @@ const Nav = () => {
           <p>Nos realisations</p>
         </div>
         <div className='contact'>
+          <div className='form-box'>
+            <div className='form-img'>
+              <p>Coordonnées & Map</p>
+            </div>
+            <div className='form'>
+              <label>Nom & Prénom :</label>
+              <input type='text' />
+              <label>E-mail :</label>
+
+              <input type='text' />
+              <label>Message</label>
+              <textarea rows={5} />
+              <button>Envoyer</button>
+            </div>
+          </div>
           <p>Contactez-nous</p>
         </div>
         <div className='body-divider'></div>

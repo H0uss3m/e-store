@@ -42,7 +42,7 @@
   opacity: 1;
   background-size: 26px;
   text-indent: 20px;
-  transition: background;
+  transition: background 300ms ease-in-out;
 }
 .search > input:hover,
 input:focus {
@@ -57,7 +57,7 @@ input:focus {
   opacity: 1;
   background-size: 16px;
   text-indent: 20px;
-  transition: background;
+  transition: background 300ms ease-in-out;
   width: 100%;
   cursor: pointer;
 }
@@ -108,6 +108,7 @@ input:focus {
   color: #ffffff;
 }
 .boutique {
+  position: relative;
   width: 100%;
   background-color: white;
   border-right: 1px solid #e2e2e2;
@@ -116,6 +117,17 @@ input:focus {
 .boutique > a {
   color: #000000;
 }
+.boutique > .form-box > .form {
+  padding: 0%;
+}
+.boutique > .form-box > .form-img > p {
+  margin-top: 0%;
+  width: 100%;
+  text-align: center;
+}
+.boutique > .form-box > .form-img > p:hover {
+  background-color: #4d302b;
+}
 .realisations {
   background-color: white;
   border-right: 1px solid #e2e2e2;
@@ -123,6 +135,7 @@ input:focus {
   width: 100%;
 }
 .contact {
+  position: relative;
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   background-color: white;
@@ -130,4 +143,66 @@ input:focus {
 }
 .body-divider {
   width: 56.5%;
+}
+
+.form-box {
+  display: none;
+}
+.boutique:hover > .form-box,
+.contact:hover > .form-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid #e2e2e2;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.form > input {
+  background: none;
+  border-bottom: 1px solid #e2e2e2 !important;
+  border: none;
+  outline: none;
+}
+
+.form:focus > input {
+  border: none;
+  background: none;
+}
+.form > textarea {
+  border: 1px solid #e2e2e2 !important;
+  /* border: none; */
+  outline: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.form > button {
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #7daf3f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form > label {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #b7b7b7;
+}
+.form-img {
+  background: transparent url('../images/imgaccueil.png') no-repeat;
+  height: 32vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }
